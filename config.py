@@ -1,0 +1,50 @@
+# config.py
+
+# Game settings
+BOARD_COLS = 16
+BOARD_ROWS = 16
+NUM_MINES = 40
+
+# Cell display settings
+CELL_SIZE = 30
+CELL_BORDER = 1
+FONT_SIZE = 20
+
+# Colors (RGB)
+COLOR_WHITE = (255, 255, 255)
+COLOR_BLACK = (0, 0, 0)
+COLOR_GREY_LIGHT = (200, 200, 200)
+COLOR_GREY_DARK = (150, 150, 150)
+COLOR_RED = (255, 0, 0)
+COLOR_GREEN = (0, 255, 0)
+COLOR_BLUE = (0, 0, 255)
+COLOR_YELLOW = (255, 255, 0)
+COLOR_CYAN = (0, 255, 255)
+COLOR_MAGENTA = (255, 0, 255)
+COLOR_DARK_GREEN = (0, 100, 0)
+
+COLOR_CELL_REVEALED = COLOR_GREY_LIGHT
+COLOR_CELL_UNREVEALED = COLOR_GREY_DARK
+COLOR_HIGHLIGHT = COLOR_YELLOW
+
+# Number colors for adjacent mine counts (1 through 8)
+NUM_COLORS = {
+    1: COLOR_BLUE,
+    2: COLOR_DARK_GREEN,
+    3: COLOR_RED,
+    4: (0, 0, 139),  # Dark Blue
+    5: (165, 42, 42), # Brown
+    6: COLOR_CYAN,
+    7: COLOR_BLACK,
+    8: COLOR_GREY_DARK,
+}
+
+# Window settings
+WINDOW_WIDTH = BOARD_COLS * CELL_SIZE
+WINDOW_HEIGHT = BOARD_ROWS * CELL_SIZE + 50 # Add space for status bar
+CAPTION = "Minesweeper"
+
+# Mouse button constants
+MOUSE_LEFT = 1
+MOUSE_MIDDLE = 2
+MOUSE_RIGHT = 3
